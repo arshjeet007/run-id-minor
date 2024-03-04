@@ -30,7 +30,7 @@ for result in results:
     cv2.circle(image, (keypoints['mouth_right']), 2, (0, 155, 255), 2)
 
 # Save the modified image
-cv2.imwrite("fd2.jpg", cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
+cv2.imwrite("result_face.jpg", cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
 
 # Print detection results
 print(results)

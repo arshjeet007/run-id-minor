@@ -6,7 +6,7 @@ mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 
 # Load input image
-image = cv2.imread('fd2.jpg')
+image = cv2.imread('pic1.jpeg')
 
 # Convert the image to RGB (Mediapipe requires RGB input)
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -46,5 +46,5 @@ if results.pose_landmarks:
     cv2.rectangle(image, (min_x, min_y), (max_x, max_y), (0, 0, 255), 2)
 
 # Save the modified image with the bounding box
-cv2.imwrite('ta2.jpg', image)
+cv2.imwrite('result_torso.jpg', image)
 
